@@ -3,6 +3,7 @@
 Fighting game made with vanilla JavaScript, Canvas API, HTML and css.  
 GSAP library to manage health bar animation and Howler.js to manage audio
 
+DEMO: https://fighting-game-one.vercel.app/
 
 ### You can play only with a keyboard
 ***
