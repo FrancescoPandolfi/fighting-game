@@ -23,9 +23,9 @@ function determineWinner({player, enemy, timerId}) {
     } else if (player.health === 0 && enemy.health === 0) {
         document.querySelector('#displayText').innerHTML = 'Double K.O.'
     } else if (player.health > enemy.health) {
-        document.querySelector('#displayText').innerHTML = 'Player 1 wins'
+        document.querySelector('#displayText').innerHTML = 'Furious king wins'
     } else if (player.health < enemy.health) {
-        document.querySelector('#displayText').innerHTML = 'Player 2 wins'
+        document.querySelector('#displayText').innerHTML = 'Kenji wins'
     }
 }
 
