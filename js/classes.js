@@ -98,7 +98,6 @@ class Fighter extends Sprite {
         }
     }
 
-
     update() {
         this.draw()
         if (!this.dead)
@@ -146,7 +145,6 @@ class Fighter extends Sprite {
             if (this.framesCurrent === this.sprites.death.framesMax - 1) {
                 this.dead = true
             }
-            console.log('return 1')
             return
         }
 
@@ -155,7 +153,6 @@ class Fighter extends Sprite {
             this.framesCurrent < this.sprites.attack.framesMax - 1 &&
             this.health !== 0
         ) {
-            console.log('return 2')
             return
         }
 
@@ -165,11 +162,9 @@ class Fighter extends Sprite {
             this.framesCurrent < this.sprites.takeHit.framesMax - 1 &&
             this.health !== 0
         ) {
-            console.log('return 3')
             return
         }
-
-
+        
         switch (sprite) {
             case 'idle':
                 if (this.image !== this.sprites.idle.image) {

@@ -8,10 +8,6 @@ function rectangularCollision({rectangle1, rectangle2}) {
     )
 }
 
-function setTimeoutHandler(action) {
-
-}
-
 // Determine winner
 function determineWinner({player, enemy, timerId}) {
     clearTimeout(timerId)
